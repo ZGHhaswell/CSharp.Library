@@ -18,6 +18,28 @@ using System.Windows;
 
 namespace CSharp.Library.DependProperties
 {
+    /// <summary>
+    /// public static readonly DependencyProperty DialogResultProperty =
+    ///DependencyProperty.RegisterAttached(
+    ///    "DialogResult",
+    ///    typeof(bool?),
+    ///    typeof(DialogResultDependProperty),
+    ///    new PropertyMetadata(DialogResultChanged));
+
+    ///private static void DialogResultChanged(
+    ///    DependencyObject d,
+    ///    DependencyPropertyChangedEventArgs e)
+    ///{
+    ///    var window = d as Window;
+    ///    if (window != null)
+    ///        window.DialogResult = e.NewValue as bool?;
+    ///}
+
+    ///public static void SetDialogResult(DependencyObject target, bool? value)
+    ///{
+    ///    target.SetValue(DialogResultProperty, value);
+    ///}
+    /// </summary>
     public static class DialogResultDependProperty
     {
         public static readonly DependencyProperty DialogResultProperty =
